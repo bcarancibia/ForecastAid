@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="css/dvf.css" />
+	<script src="http://d3js.org/d3.v3.js"></script>
+
+
+	<title>Forecast Foreign Aid</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="yeti.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+
+        html, body, #map, #svg
+		{
+             width: 960px;
+  			height: 500px;
+       }
+		
+        body 
+		{
+            padding: 10;
+            margin: 10;
+        }
+
+    </style>
+    <header>
+</header>
+
+    <title>Forecast Foreign Aid Amounts</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Forecast Foreign Aid Amounts</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="">Data</a></li>-->
+            <li><a href="http://sps.cuny.edu/programs/ms_dataanalytics/curriculum">CUNY Master in Data Analytics</a></li>
+            <li><a href="http://www.aidtransparency.net/">IATI</a></li>
+            <!--<li><a href="https://bcarancibia.github.io/">Ben Arancibia</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="dataworkflow.html">Data Workflow</a></li>
+
+            <li><a href="map.html">Maps</a></li>
+            <li><a href="data.html">Data Query Builder</a></li>
+          </ul>
+        </div>
+         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Forecasting Foreign Aid Amounts</h1>
+          <p>
+           Developing countries face challenges in accessing up-to-date information about aid, development, and humanitarian flows. This information is needed to plan and manage resources effectively. There is a large movement which allows different stakeholders to publish data on development cooperation activities. The <a href="http://www.aidtransparency.net/"> International Aid Transparency Initiative </a> manages and provides the standard that donors and recipient countries, civil society organizations, and others use to publish and consume data on development cooperation activities. </p>
+
+
+          <p>
+          This is an independent study for the CUNY MSDA and focuses on trying forecast financial foreign aid amounts. The menu to the left has the data workflow (data steps and clean up), maps of foreign financial aid, and the csv query builder for IATI to the most up to date download data.
+          </p> 
+
+
+<script>
+
+
